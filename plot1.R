@@ -9,6 +9,7 @@ if(!file.exists(destfile)) {
         download.file(url,destfile=destfile, mode="wb")
         setwd("./data")
         unzip("power.zip")
+        setwd("..")
 }
 
 print("Loading Data...")
